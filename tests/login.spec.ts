@@ -5,7 +5,6 @@ test('Enrollment page should have correct title', async ({page}) => {
     await page.getByTestId('name-input').fill('tester1');
     await page.getByTestId('email-input').fill('tester1@gmail.com');
     await page.getByTestId('track-select').selectOption('Playwright Core');
-    
     await page.getByTestId('remember-checkbox').check();
     await page.getByTestId('mode-ui-radio').click();
     await page.getByTestId('submit-form-btn').click();
